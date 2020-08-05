@@ -2,7 +2,9 @@
 
 var numero = parseInt(prompt("Inserisci un numero"));
 
-if (numero % 2 === 0) {
+if (isNaN(numero)) {
+  alert("Inserisci solo valori numerici!");
+} else if (numero % 2 === 0) {
   document.getElementById("numero").innerHTML = numero;
 } else {
   document.getElementById("numero").innerHTML = numero + 1;
