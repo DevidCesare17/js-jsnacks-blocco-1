@@ -6,7 +6,7 @@ document.getElementById("prima-parola").innerHTML = parola1;
 var parola2 = prompt("Inserisci un'altra parola");
 document.getElementById("seconda-parola").innerHTML = parola2;
 
-if (!isNaN("") || !isNaN("")) {
+if (!isNaN(parola1) || !isNaN(parola2)) {
   alert("Inserire solo parole o lettere!");
 } else if (parola1.length < parola2.length) {
   document.getElementById("risultato").innerHTML = parola1 + " - " + parola2;
